@@ -27,7 +27,34 @@
 .App-link {
   color: #61dafb;
 }
-
+.animal-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.Child-div {
+  border: 1px solid yellow;
+  margin: 10px;
+  padding: 15px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+.Child-div button{
+  padding: 6px;
+  margin: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 10px 10px 40px gray;
+}
+.comment{
+  color: red;
+}
+@media(max-width:768px){
+  .animal-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
